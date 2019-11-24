@@ -17,3 +17,10 @@ Loan Plan Generator for Repayment
 
 # API Documentations
 
+
+[API Documentation Preview](http://htmlpreview.github.io/?https://github.com/Anilinfo2015/loan-plan-generator/blob/master/src/main/resources/api-guide.html)
+
+![Doc1](https://github.com/Anilinfo2015/loan-plan-generator/blob/master/src/main/resources/doc1.PNG "Logo Title Text 1")
+![Doc1](https://github.com/Anilinfo2015/loan-plan-generator/blob/master/src/main/resources/doc2.PNG "Logo Title Text 1")
+![Doc1](https://github.com/Anilinfo2015/loan-plan-generator/blob/master/src/main/resources/doc3.PNG "Logo Title Text 1")
+
