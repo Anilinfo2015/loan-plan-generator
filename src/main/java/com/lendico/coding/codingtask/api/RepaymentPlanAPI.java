@@ -10,6 +10,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,9 +43,12 @@ public class RepaymentPlanAPI {
     private String outputCurrency;
     
     @GetMapping(path = "test")
-    public String test() {
-        return "running";
+    public Link test() {
+        Link link = new Link(RestPathURI.REPAYMENT_ROOT + "/test");
+        link.withRel(RestPathURI.REPAYMENT_ROOT +RestPathURI.GENERATE_PLAN);
+        return link;
     }
+    
     
     @PostMapping(path = RestPathURI.GENERATE_PLAN, consumes = "application/json", produces = "application/json")
     public @ResponseBody
