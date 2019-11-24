@@ -1,0 +1,36 @@
+= Lendico API Guide
+v1.0, Anil Kurmi
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:highlightjs-theme: github
+:toc: left
+:toclevels: 3
+:sectlinks:
+:sectnums:
+
+== Resources
+
+=== Lendico Generate Repayment Plan API Guide
+
+This project exposes a REST api to caluclate repayment scheduled , annuity amount , interest and principal amount , outstanding prinipal amount for annutiy loan. This project is developed using Spring Boot .
+
+- By default application runs on port 8080 . Kindly make sure the port is available
+
+- Service is available in http://localhost:8080/api/v1/repayment/generate-plan
+
+===== Generate Plan Request
+
+include::{snippets}/generate-plan/http-request.adoc[]
+
+===== Sample Generate Plan Request
+
+include::{snippets}/generate-plan/request-body.adoc[]
+
+===== Response Body
+
+include::{snippets}/generate-plan/http-response.adoc[]
+
+===== Sample Response Body
+
+include::{snippets}/generate-plan/response-body.adoc[]
